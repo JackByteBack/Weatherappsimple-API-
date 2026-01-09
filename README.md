@@ -117,3 +117,5 @@ fetch('api.weather.com/data?location=NYC&key=API_KEY')
   .then(response => response.json())
   .then(data => displayWeather(data))
   .catch(error => handleError(error));
+> displayWeather(data))
+  .catch(error => handleError(error));
