@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🌥️Weather app👀</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/lucide-icons@latest"></script>
+</head>
+<body>
+  <div id="app" class="app clear">
+    <header>
+      <h1 class="logo">🌦️ Weather<span>app👀</span></h1>
+      <form id="weatherForm">
+        <input type="text" id="cityInput" placeholder="Search city..." />
+        <button type="submit"><i data-lucide="search"></i></button>
+      </form>
+    </header>
+
+    <section id="currentWeather" class="card fadeIn">
+      <div class="top-info">
+        <h2 id="cityName">--</h2>
+        <img id="weatherIcon" src="" alt="Weather Icon" />
+      </div>
+      <p id="description">--</p>
+
+      <div class="weather-details">
+        <div><i data-lucide="thermometer"></i> <span id="temp">--</span>°C</div>
+        <div><i data-lucide="wind"></i> <span id="wind">--</span> km/h</div>
+        <div><i data-lucide="droplets"></i> <span id="humidity">--</span>%</div>
+        <div><i data-lucide="gauge"></i> <span id="pressure">--</span> hPa</div>
+        <div><i data-lucide="sunrise"></i> <span id="sunrise">--</span></div>
+        <div><i data-lucide="sunset"></i> <span id="sunset">--</span></div>
+        <div><i data-lucide="activity"></i> Feels <span id="feels">--</span>°C</div>
+      </div>
+    </section>
+
+    <section id="forecast" class="card fadeIn">
+      <h2>5-Day Forecast</h2>
+      <div id="forecastContainer" class="forecast-grid"></div>
+    </section>
+
+    <section id="chartSection" class="card hidden fadeInUp">
+      <h2 id="chartTitle">Temperature Trend</h2>
+      <canvas id="forecastChart"></canvas>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
