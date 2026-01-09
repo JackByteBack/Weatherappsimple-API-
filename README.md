@@ -1,5 +1,4 @@
 # Weatherappsimple-API
-# Weather-app-simple-API-
 The Weather App provides accurate, real-time weather updates with a clean, easy-to-use interface. It features live updates, a worldwide city search, a 5-day forecast, and essential weather information.
 #🌦️ Weather App
 
