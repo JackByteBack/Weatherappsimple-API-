@@ -2,7 +2,7 @@
 
 A simple, elegant, and API-powered weather application that delivers accurate, real-time weather information in an easy-to-use format.
 
-🔗 **Live Demo:** [weatherappsimple-api.vercel.app](https://weatherappsimple-api.vercel.app)
+🔗 **Live Demo:** [weatherappsimple-api.vercel.app](https://weatherappsimple-api.vercel.app)  |  📁 **GitHub:** [JackByteBack/Weatherappsimple-API-](https://github.com/JackByteBack/Weatherappsimple-API-)
 
 -----
 
@@ -52,13 +52,13 @@ The application follows a modular and scalable architecture:
 
 ### Frontend
 
-- React.js / Vue.js
+- HTML5
 - CSS3 (modern styling)
-- Axios (API requests)
+- Vanilla JavaScript (ES6+)
 
 ### API
 
-- OpenWeatherMap / WeatherAPI
+- OpenWeatherMap API
 - RESTful API architecture
 - JSON data format
 
@@ -66,6 +66,7 @@ The application follows a modular and scalable architecture:
 
 - Visual Studio Code
 - Postman (API testing)
+- Vercel (Deployment)
 
 -----
 
@@ -85,7 +86,7 @@ The application follows a modular and scalable architecture:
 - [x] **Phase 2 — Core Features:** API integration, location search, current weather display
 - [x] **Phase 3 — Enhanced UI:** 5-day forecast, detailed metrics, visual polish
 - [x] **Phase 4 — Testing:** Bug fixes, performance optimization, user testing
-- [x] **Phase 5 — Launch:** Deployment, documentation, initial user feedback
+- [x] **Phase 5 — Launch:** Deployment on Vercel, documentation, initial user feedback
 
 -----
 
@@ -105,10 +106,21 @@ The application follows a modular and scalable architecture:
 ### Example
 
 ```js
-fetch('https://api.weather.com/data?location=NYC&key=API_KEY')
+fetch('https://api.openweathermap.org/data/2.5/weather?q=Mumbai&appid=API_KEY')
   .then(response => response.json())
   .then(data => displayWeather(data))
   .catch(error => handleError(error));
+```
+
+-----
+
+## 📁 Project Structure
+
+```
+Weatherappsimple-API-/
+├── index.html      # Main HTML structure
+├── style.css       # Styling and responsive layout
+└── script.js       # API logic and DOM manipulation
 ```
 
 -----
